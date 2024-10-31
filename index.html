@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilo CSS -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Estilo JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
+    
+    <title>RESTAURANTE BORAU</title>
+  </head>
+  
+  <body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+  <div class="container-fluid">
+    <a href="index.html">
+      <img src="img/logo borau-01-01.png" alt="logo" width="120" height="auto">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown me-2">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CARTA
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#menu-dia">MENÚ DEL DÍA</a></li>
+            <li><a class="dropdown-item" href="#menu-finde">MENÚ FIN DE SEMANA</a></li>
+            <li><a class="dropdown-item" href="#bodega">BODEGA</a></li>
+          </ul>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#para-llevar">PARA LLEVAR</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#contacto">CONTACTO</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#proyecto">PROYECTO</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+    
+  <!-- CAROUSEL DE IMAGENES -->
+    <div>
+      <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
+        <div id="carousel-1__BV_inner" class="carousel-inner">
+          <!-- Primera imagen-->
+          <div class="carousel-item active">
+            <img src="img/fachada.jpg" class="img-fluid w-100 d-block" alt="Fachada 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>BORAU</h1>
+                <h2>EL PLACER DEL BUEN COMER</h2>
+            </div>
+        </div>
+        
+          <!-- Segunda imagen -->
+          <div class="carousel-item">
+            <img src="img/fachada 2.jpg" class="img-fluid w-100 d-block" alt="Fachada 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>BORAU</h1>
+              <h2>EL PLACER DEL BUEN COMER</h2>
+            </div>
+          </div>
+          <!-- Tercera imagen -->
+          <div class="carousel-item">
+            <img src="img/comedor.jpg" class="img-fluid w-100 d-block" alt="Comedor">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>BORAU</h1>
+              <h2>EL PLACER DEL BUEN COMER</h2>
+            </div>
+          </div>
+          <!-- Cuarta imagen -->
+          <div class="carousel-item">
+            <img src="img/comedor2.jpg" class="img-fluid w-100 d-block" alt="Comedor 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>BORAU</h1>
+              <h2>EL PLACER DEL BUEN COMER</h2>
+            </div>
+          </div>
+          <!-- Quinta imagen -->
+          <div class="carousel-item">
+            <img src="img/barra.jpg" class="img-fluid w-100 d-block" alt="Barra">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>BORAU</h1>
+              <h2>EL PLACER DEL BUEN COMER</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carousel-1" data-bs-slide-to="3"></li>
+          <li data-bs-target="#carousel-1" data-bs-slide-to="4"></li>
+        </ol>
+  
+
+  <!-- HISTORIA y HORARIOS del restaurante en formato columna -->
+    <div class="container mt-5">
+    <div class="row">
+    
+    <!-- Columna de la izquierda (Historia) -->
+     
+    <div class="col-md-6">
+        <h3 class="titulo-historia">NUESTRA HISTORIA</h3>
+        <hr class="linea-personalizada">
+        <p class="initial-letter">
+          El restaurante Borau, que se encuentra en la localidad de Fraga, tiene más de 50 años de tradición culinaria. 
+          Fundado por la familia Borau, con el tiempo, se ha convertido en un referente gastronómico en la región de Huesca, 
+          siendo conocido por su hospitalidad y la calidad de la cocina. A lo largo de los años, hemos logrado mantener 
+          el legado familiar, ofreciendo platos tradicionales aragoneses con un toque moderno, siempre usando ingredientes 
+          frescos y de alta calidad.
+      </p>
+    </div>
+    
+    <!--Barra lateral -->
+    <div class="sidebar">
+      <p class="vertical-text">Av Madrid 11 Fraga </p>   
+    </div>
+    
+    <!-- Columna de la derecha (Horario) -->
+    <div class="col-md-6">
+      <h3 class="titulo-horario">HORARIO</h3>
+      <hr class="linea-personalizada">
+      <div class="horario">
+          <div class="fila">
+              <span class="dia">Lunes</span>
+              <span class="hora">9:00 a 19:00</span>
+          </div>
+          <div class="fila">
+              <span class="dia">Martes</span>
+              <span class="hora">Cerrado</span>
+          </div>
+          <div class="fila">
+              <span class="dia">Miércoles</span>
+              <span class="hora">9:00 a 19:00</span>
+          </div>
+          <div class="fila">
+              <span class="dia">Jueves</span>
+              <span class="hora">9:00 a 19:00</span>
+          </div>
+          <div class="fila">
+              <span class="dia">Viernes</span>
+              <span class="hora">9:00 a 19:00</span>
+          </div>
+          <div class="fila">
+              <span class="dia">Sábado</span>
+              <span class="hora">9:00 a 19:00</span>
+          </div>
+          <div class="fila">
+              <span class="dia">Domingo</span>
+              <span class="hora">9:00 a 19:00</span>
+          </div>
+      </div>
+    </div>
+    </div> 
+    </div> 
+
+  <!-- CARTA -->
+    <div class="seccion-negra"></div>
+    <div class="seccion-negra">
+      <!-- Columna de la izquierda (Menu entre semana) -->
+      <div class="contenedor-columnas">
+        <div class="columna izquierda">
+          <h2 id="menu-finde">MENÚ FIN DE SEMANA</h2>
+          <p class="titulo">ENTRANTES A COMPARTIR</p>
+          <p>Jamón ibérico de cebo con crackers y tomate</p>
+          <p>Tartar de salmón ahumado con hummus de 
+            <br>berenjena y sus huevas</br>
+          </p>
+          <p>Gyozas de buey con mayonesa semipicante</p>
+          <p>Baos rellenos de carrillera, cebolleta y teriyaki</p>
+          
+          <p class="titulo">SEGUNDOS A ELEGIR</p>
+          <p>Manitas dehuesadas rellenas de ceps con 
+            <br>chips de patata violeta</br>
+          </p>
+          <p>Tataki de atún rojo con aguacate, wassabi y alga
+            <br>wakame</br>
+          </p>
+          <p>Albóndigas de bacalao con salsa de gambas y 
+            <br>langostinos crujientes</br>
+          </p>
+          <p>Solomillo de ternera del pirineo con foie y
+            <br>P.X (Supl. 7'90€)</br>
+          </p>
+          
+          <p class="titulo">POSTRES A ELEGIR</p>
+          <p>Falsa torrija de queso provolone con confitura de 
+            <br>frutos rojos e higos de Fraga</br>
+          </p>
+          <p>Yogurt griego y frutos rojos en tres texturas</p>
+          <p>Coco con chocolate</p>
+          <p>Pastel ruso</p>
+        
+          <div class="precio">PAN, AGUA Y VINO - 31'90€</div>
+        </div>
+        
+
+        <div class="columna derecha">
+          <h2 id="menu-dia">MENÚ DIARIO</h2>
+          <p class="titulo">PRIMEROS</p>
+          <p>Tallarines negros con carbonara de calamar</p>
+          <p>Pucherito de alubias con butifarra, oreja
+            <br>y chorizo</br>
+          </p>
+          <p>Rulo de patata relleno de espinacas y bacon </p>
+          <p>Crema liguera de puerro y calabacin</p>
+          <p class="titulo">SEGUNDOS</p>
+          <p>Secreto ibérico a la brasa con salsa de 
+            <br>trufa</br>
+          </p>
+          <p>Bacalao a la vizcaina con huevo a baja 
+            <br>temperatura</br>
+          </p>
+          <p>Chuletillas de conejo a la 
+            <br>milanesa</br>
+          </p>
+          <p>Cachopos rellenos de trigueros y 
+            <br>queso</br>
+          </p>
+          <p class="titulo">POSTRES</p>
+          <p>Tartar de fruta natural, mus de coco
+            <br>y su sorbete</br>
+          </p>
+          <p>Tarta de queso y confitura de melocoton</p>
+          <p>Yogurt, crumble y frutos rojos</p>
+          <p>Tarta de palmeritas y chocolate blanco</p>
+
+        <div class="precio">PAN, AGUA Y VINO - 14'90€</div>
+        </div>
+
+      </div>
+      
+    </div>
+  
+  <!-- BODEGA -->
+  <div class="bodega">
+    <h2 id="bodega" class="bodega-title">BODEGA</h2>
+    
+    <div class="bodega-container">
+      <div class="bodega-card-custom-size">
+        <img src="img/montesierra.jpg" class="card-img-top card-image" alt="Botella de vino montesierra tinto">
+        <div class="card-body">
+          <div class="card-text">Montesierra Tinto</div>
+        </div>
+      </div>
+
+      <div class="bodega-card-custom-size">
+        <img src="img/montesierra-blanco.png" class="card-img-top card-image" alt="Botella de vino montesierra blanco">
+        <div class="card-body">
+          <div class="card-text">Montesierra Blanco</div>
+        </div>
+      </div>
+
+      <div class="bodega-card-custom-size">
+        <img src="img/3404.png" class="card-img-top card-image" alt="Botella de vino 3404 tinto">
+        <div class="card-body">
+          <div class="card-text">3404 Tinto</div>
+        </div>
+      </div>
+
+      <div class="bodega-card-custom-size">
+        <img src="img/3404-blanco.png" class="card-img-top card-image" alt="Botella de vino 3404 blanco">
+        <div class="card-body">
+          <div class="card-text">3404 Blanco</div>
+        </div>
+      </div>
+
+      <div class="bodega-card-custom-size">
+        <img src="img/glarima.png" class="card-img-top card-image" alt="Botella de vino Glarima">
+        <div class="card-body">
+          <div class="card-text">Glarima Rosado</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- PARA LLEVAR -->
+  <h2 id="para-llevar" class="para-llevar">PARA LLEVAR</h2>
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Tarjeta 1 (a la izquierda) -->
+      <div class="col-md-4 mb-4 d-flex justify-content-start">
+        <div class="card card-custom-size">
+          <img src="./img/iconos/mirarcarta.png" class="card-img-top card-image" alt="icono para ver la carta" onclick="changeImage(this)">     
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (centrada) -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center">
+        <div class="card card-custom-size">
+          <img src="./img/iconos/llamada.png" class="card-img-top card-image" alt="icono para indicar que llames" onclick="changeImage(this)">
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 (a la derecha) -->
+      <div class="col-md-4 mb-4 d-flex justify-content-end">
+        <div class="card card-custom-size">
+          <img src="./img/iconos/recoger.png" class="card-img-top card-image" alt="icono para saber que debes recoger el pedido" onclick="changeImage(this)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACTO -->
+    <section id="contacto" class="contacto-section mt-5">
+    <div class="contacto-background">
+      <img src="./img/comedor.jpg" alt="Imagen del restaurante" class="background-image">
+    </div>
+
+    <h2 id="contacto-titulo" class="para-llevar mt-5">CONTACTO</h2>
+    <!-- Información de contacto -->
+    <div class="contacto-content container">
+    <div class="row">
+      <div class="col-md-6 contacto-text">
+        <h3>RESTAURANTE BORAU</h3>
+        <p>Av. Madrid, 11 22520 Fraga, Huesca</p>
+        <p>+34 637 59 40 31</p>
+        <p>@restauranteborau</p>
+        <p>Horario: Mie-Lun 09:00 - 19:00</p>
+      </div>
+
+      <!-- Mapa a la derecha -->
+      <div class="col-md-6 contacto-mapa">
+        <h3>UBICACIÓN</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746.7815132476752!2d0.340638855164386!3d41.523210115048535!2m3!1f0!2f0!3f0!3m2!
+        1i1024!2i768!4f13.1!3m3!1m2!1s0x12a73ed45f61b90f%3A0xefde2cf744bb2e86!2sBorau!5e0!3m2!1ses!2ses!4v1729185191107!5m2!1ses!2ses" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    </div>
+    </section>
+
+  <!-- AYUDANOS A MEJORAR -->
+  <div class="form-section">
+    <div class="form-content">
+      <h2 class="form-title">AYUDANOS A MEJORAR</h2>
+      <p class="form-description">
+        Puedes dejarnos un mensaje en el siguiente formulario con alguna sugerencia o consejo que nos quieras dar.
+      </p>
+  
+      <!-- Fila para Nombre y Correo -->
+      <div class="form-row">
+        <div class="form-floating half-width">
+          <input type="text" class="form-control" id="nameInput" placeholder="Nom">
+          <label for="nameInput">Nombre</label>
+        </div>
+        <div class="form-floating half-width">
+          <input type="email" class="form-control" id="emailInput" placeholder="Dirección de correo electrónico">
+          <label for="emailInput">Correo electrónico</label>
+        </div>
+      </div>
+  
+      <!-- Fila para Mensaje -->
+      <div class="form-floating full-width">
+        <textarea class="form-control message-box" placeholder="Escribe tu mensaje aquí" id="messageTextarea"></textarea>
+        <label for="messageTextarea">Mensaje</label>
+      </div>
+  
+      <!-- Botón de Enviar -->
+      <button class="submit-button">ENVIAR</button>
+    </div>
+  </div>
+  
+  
+  <!-- PROYECTOS P5JS -->
+  <section id="proyecto">
+    <div id="micapa"></div>
+  </section>
+    
+   
+
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <p>Acerca de Nosotros</p>
+            <p>Restaurante Borau - Sabores auténticos en el corazón de Fraga. 
+              <br>Disfruta de nuestra cocina tradicional y ambiente acogedor.</p>
+        </div>
+        
+        <div class="footer-section">
+            <p>Redes Sociales</p>
+            <a href="https://www.facebook.com/p/RESTAURANTE-BORAU-100072621062834/">Facebook</a> |  <a href="https://www.instagram.com/restauranteborau/?hl=es">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Página web de Nico Gómez y Jaume Agullo.</p>
+    </div>
+  </footer>
+
+  
+
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  
+  </body>
+  <script src="js/sketch.js"></script>
+  <script src="js/netart.js"></script>
+
+</html>
+

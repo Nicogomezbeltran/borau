@@ -38,7 +38,7 @@ function setup() {
 function draw() {
 //En el draw dibuja la imágen de la habitación y llama a las funciones para dibujar los elementos
   background(220);
-  image(habitacion, 0, 0, 1408, 720);
+  image(habitacion, 0, 0, 1410, 720);
   //Llamada a las acciones de dibujar del canvas
   dibujarCuadro();
   dibujarTexto();
